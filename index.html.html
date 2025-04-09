@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Akhir Proyek Mekatronika</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header, footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1, footer p {
+            margin: 0;
+        }
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 2px solid #6c757d;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #495057;
+        }
+        p, ul {
+            margin-bottom: 20px;
+        }
+
+        /* Navigation */
+        .nav {
+            background-color: #343a40;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .nav a:hover {
+            background-color: #495057;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        /* Image Styles */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo Styles */
+        header img {
+            max-width: 150px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Laporan Akhir Proyek Mekatronika</h1>
+        <p>Tugas Akhir Sensor Gas</p>
+        <img src="images/image-removebg-preview (6).png" alt="Krista Mitra Logo">
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#bab1">BAB I</a>
+        <a href="#bab2">BAB II</a>
+        <a href="#bab3">BAB III</a>
+        <a href="#bab4">BAB IV
+        <a href="#bab5">BAB VI</a>
+        
+    </nav>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- BAB I -->
+        <div id="bab1" class="section">
+            <h2>BAB I - Pendahuluan</h2>
+            <h3>Latar Belakang</h3>
+            <p>
+                Pada era modern, penggunaan gas dalam berbagai aktivitas rumah tangga dan industri semakin meningkat. 
+                Namun, kebocoran gas dapat menimbulkan bahaya besar, seperti kebakaran, ledakan, atau gangguan kesehatan. 
+                Oleh karena itu, diperlukan alat pendeteksi gas yang mampu memberikan peringatan dini jika terjadi kebocoran gas berbahaya.
+            </p>
+            <h3>Tujuan</h3>
+            <p>
+                Tujuan utama dari proyek ini adalah merancang dan membuat alat pendeteksi gas menggunakan sensor MQ2, 
+                yang dapat memberikan notifikasi suara dan cahaya ketika mendeteksi keberadaan gas berbahaya.
+            </p>
+            <h3>Manfaat</h3>
+            <ul>
+                <li>Meningkatkan keamanan di rumah atau tempat kerja dengan mendeteksi gas berbahaya secara dini.</li>
+                <li>Meminimalkan risiko kecelakaan akibat kebocoran gas.</li>
+                <li>Memberikan solusi praktis dan ekonomis dalam sistem keamanan berbasis sensor.</li>
+            </ul>
+        </div>
+
+        <!-- BAB II -->
+        <div id="bab2" class="section">
+            <h2>BAB II - Tinjauan Pustaka</h2>
+            <h3>2.1 Teori Dasar Mekatronika</h3>
+            <p>
+                Mekatronika adalah ilmu yang menggabungkan teknik mekanika, elektronik, dan informatika untuk menciptakan sistem yang lebih cerdas. 
+                Dalam proyek ini, konsep mekatronika diaplikasikan untuk mendeteksi gas menggunakan sensor MQ2, serta memberikan peringatan menggunakan buzzer dan LED sebagai keluaran sistem.
+            </p>
+            <h3>2.2 Komponen yang Digunakan</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Komponen</th>
+                        <th>Deskripsi dan Fungsi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MQ2 Gas Sensor</td>
+                        <td>Mendeteksi konsentrasi gas seperti LPG, metana, dan karbon monoksida di udara.</td>
+                    </tr>
+                    <tr>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Sfm 27 Buzzer</td>
+                        <td>Menghasilkan suara untuk memberikan peringatan ketika gas terdeteksi.</td>
+                    </tr>
+                    <tr>
+                        <td>Kabel Jumper Male to Male</td>
+                        <td>Menghubungkan komponen pada breadboard tanpa soldering.</td>
+                    </tr>
+                    <tr>
+                        <td>Kabel Jumper Male to Female</td>
+                        <td>Menghubungkan sensor ke rangkaian utama.</td>
+                    </tr>
+                    <tr>
+                        <td>Baterai 9V</td>
+                        <td>Sumber daya utama untuk sistem.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- BAB III -->
+        <div id="bab3" class="section">
+            <h2>BAB III - Pembuatan Proyek</h2>
+            <h3>3.1 Alat dan Bahan</h3>
+            <p>
+                Proyek ini menggunakan alat dan bahan utama, termasuk MQ2 Gas Sensor, LED, mini buzzer, kabel jumper, dan baterai 9V. 
+                Setiap komponen memiliki fungsi penting dalam mendukung sistem pendeteksi gas yang andal.
+            </p>
+            <h4>Harga Komponen:</h4>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Komponen</th>
+                    <th>Harga</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      MQ2 Gas Sensor <br>
+                      <img src="images/Mq2.jpeg" alt="MQ2" width="150">
+                    </td>
+                    <td>Rp 20.000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      SFM 27 Buzzer <br>
+                      <img src="images/Sfm 27.jpeg" alt="Buzzer" width="150">
+                    </td>
+                    <td>Rp 12.000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Kabel Jumper Male to Male <br>
+                      <img src="images/Kabel Jumper Male to Male.jpeg" alt="Kabel Male-Male" width="150">
+                    </td>
+                    <td>Rp 2.000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Kabel Jumper Male to Female <br>
+                      <img src="images/Kabel Jumper Male to Female.jpeg" alt="Kabel Male-Female" width="150">
+                    </td>
+                    <td>Rp 2.000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Baterai 9V <br>
+                      <img src="images/Baterai 9V.jpeg" alt="Baterai" width="150">
+                    </td>
+                    <td>Rp 8.000</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+
+            <h3>3.2 Prinsip Kerja</h3>
+            <p>
+            Sistem deteksi gas ini bekerja berdasarkan prinsip deteksi oleh sensor MQ2. Ketika gas berbahaya terdeteksi, sensor mengirimkan sinyal ke rangkaian kontrol yang memicu buzzer untuk menyala dan berbunyi, memberikan peringatan kepada pengguna.
+            
+        <img src="images/Flowchart.jpg" alt="Baterai" width="350">
+        </p>
+            
+        </td>
+            <h3>3.3 Skema Rangkaian</h3>
+            <p>
+                Skema rangkaian sistem deteksi gas melibatkan penghubungan sensor MQ2 ke mikrokontroler atau rangkaian kontrol yang dapat memproses data dari sensor tersebut kepada buzzer
+            <h3>3.4 Desain 2d dan Bentuk Akhir</h3>
+            <img src="images/Design 2d.jpg" alt="Baterai" width="350">
+            <img src="images/maket.jpg" alt="Baterai" width="250">
+        
+       
+    <!-- BAB IV -->
+    
+    <div id="bab4" class="section">
+    <h2 id="hasil">4.1 Analisa</h2>
+    <h3> 4.1.1 Gambar Rangkaian Elektronika</h3>
+    <img src="images/foot.jpg" alt="Baterai" width="350">
+    <img src="images/Steveing.jpg" alt="Baterai" width="350">
+    <h3> 4.1.2 Rangkaian</h3>
+    <table>
+        <caption>Rangkaian Sensor Gas MQ-2 dan SFM-27 Buzzer</caption>
+        <tr>
+            <th>Komponen</th>
+            <th>Kaki</th>
+            <th>Koneksi</th>
+        </tr>
+        <tr>
+            <td>MQ-2 Sensor</td>
+            <td>VCC</td>
+            <td>Arus positif (5V)</td>
+        </tr>
+        <tr>
+            <td>MQ-2 Sensor</td>
+            <td>GND</td>
+            <td>Arus negatif (GND)</td>
+        </tr>
+        <tr>
+            <td>MQ-2 Sensor</td>
+            <td>D0</td>
+            <td>Input ke pin digital mikrokontroler (opsional)</td>
+        </tr>
+        <tr>
+            <td>MQ-2 Sensor</td>
+            <td>A0</td>
+            <td>Input ke pin analog mikrokontroler</td>
+        </tr>
+        <tr>
+            <td>SFM-27 Buzzer</td>
+            <td>Kaki positif (panjang)</td>
+            <td>Output mikrokontroler (bisa lewat transistor atau langsung dari sensor)</td>
+        </tr>
+        <tr>
+            <td>SFM-27 Buzzer</td>
+            <td>Kaki negatif (pendek)</td>
+            <td>Arus negatif (GND)</td>
+        </tr>
+    </table>
+    <h3>4.2.1 Hasil yang didapatkan (Timeline)</h3>
+    <table border="1" cellspacing="0" cellpadding="8">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Tanggal</th>
+          <th>Berhasil/Gagal</th>
+          <th>Hasil yang didapatkan</th>
+          <th>Kesalahan</th>
+          <th>Pembetulan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>27 Juli 2024</td>
+          <td>Berhasil</td>
+          <td>Menemukan ide yaitu membuat gas sensor.</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>1 Juli 2024</td>
+          <td>Berhasil</td>
+          <td>Membeli alat dan proyek.</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>20 Juli 2024</td>
+          <td>Berhasil</td>
+          <td>Sensor berhasil bekerja dengan teratur.</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>1 Januari 2025</td>
+          <td>Gagal</td>
+          <td>Gagal membuat maket.</td>
+          <td>Lem terlihat dan tidak rapi.</td>
+          <td>Membuat ulang maket.</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>7 Januari 2025</td>
+          <td>Berhasil</td>
+          <td>Berhasil membuat maket sesuai rencana.</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>15 Februari 2025</td>
+          <td>Berhasil</td>
+          <td>Berhasil mempresentasikan kepada guru.</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3> 4.2.2 Hasil Percobaan
+        <p>Gas Sensor: Percobaan pertama rangkaian nya tidak bisa jadi membikin baru rangkaian. Percobaan kedua: Rangkain Sensor Gas sudah bisa berkerja
+             </p>
+    <h3> 4.3 Kelebihan dan Kekurangan Alat</h3>
+    <p> Kelebihan Sensor gas: Mendeteksi kebocoran gas 
+        <p> Kekurangan Sensor gas: Ada sedikit delay jika baru di pasang baterai nya </p>
+    </p>
+    
+    <h2 id="evaluasi">4.4 Evaluasi Diri</h2>
+    <p>Saya merasa senang saat melakukan proyek akhir ini karena saya bisa mengerjakan sesuatu secara fisik, bukan hanya dalam bentuk digital. Saya menikmati proses menyusun kabel, memasang dioda, dan LED meskipun saya tidak ahli. Saya belajar bahwa meskipun kita tidak bisa di awal, jika kita terus mencoba, lama-kelamaan kita akan menjadi lebih baik. Langkah pertama memang sulit, tetapi setelah itu langkah kedua dan ketiga akan terasa lebih mudah.</p>
+    
+    <p><strong>Terima kasih untuk proyek akhir ini!</strong></p>
+</body>
+</html>
+<style>
+    #bab5 {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: #333;
+        border-bottom: 2px solid #007BFF;
+        padding-bottom: 5px;
+    }
+    h3 {
+        color: #0056b3;
+        margin-top: 15px;
+    }
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+    li {
+        margin-bottom: 5px;
+    }
+</style>
+
+<div id="bab5" class="section">
+    <h2 id="hasil">5.1 Kesimpulan</h2>
+    <p>Sensor gas ini memiliki manfaat besar bagi keselamatan diri sendiri maupun orang lain. Dengan kemampuannya mendeteksi kebocoran gas, sensor ini berperan penting dalam mencegah kebakaran dan meningkatkan kewaspadaan pengguna.</p>
+    
+    <h2 id="saran">5.2 Saran</h2>
+    
+    <h3>Ms. Linda</h3>
+    <ul>
+        <li>Merapikan maket agar tampil lebih rapi dan profesional.</li>
+        <li>Melakukan presentasi dengan lebih tenang dan percaya diri.</li>
+        <li>Menghindari kepanikan saat menyampaikan materi.</li>
+    </ul>
+    
+    <h3>Bu Julie</h3>
+    <ul>
+        <li>Meninggikan atap agar tampilan maket lebih proporsional.</li>
+        <li>Menyediakan tempat khusus untuk baterai agar lebih terorganisir.</li>
+    </ul>
+    
+    <h3>Pak Sandy</h3>
+    <ul>
+        <li>Merapikan maket agar lebih menarik dan mudah dipahami.</li>
+        <li>Menyampaikan presentasi dengan lebih tenang dan percaya diri.</li>
+        <li>Menjadikan penyampaian materi lebih menarik bagi audiens.</li>
+    </ul>
+</div>
+
+   
+    <!-- BAB VI -->
+ <div id="bab5" class="section">
+    <h2 id="hasil">Bab 6</h2>
+    <ul>
+        <li>Format Penilian 
+            
+                <li>Link video pembuatan + Video presentasi jadi satu file
+                     satu file
+                     <a href="https://www.youtube.com/watch?v=--lJB-na5ho" target="_blank">Kalau tidak bisa di lihat click link ini
+                        
+                     </a>
+
+                    
+                     <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My YouTube Video</title>
+</head>
+<body>
+  <h1>Video</h1>
+  <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/--lJB-na5ho" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+  </iframe>
+</body>
+</html>
+                </ul>
+            
+                </ul>
+            </ul>
+    </ul>
+    <style>
+        #bab5 {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #0056b3;
+            margin-top: 15px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+    
+   
+    
+   
